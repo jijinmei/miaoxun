@@ -1,0 +1,40 @@
+body{
+    margin: 0 auto;
+    width:100%;
+    min-width:1280px;
+    font-family: "Microsoft YaHei",微软雅黑;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+#app{
+    /* overflow-x: hidden; */
+    /* min-height: 2000px; */
+}
+
+html{
+    background: #F2F2F2;
+}
+
+#app > div{
+    /* margin-top: 52px; */
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+li{
+    display: inline-block;
+}
+
+p{
+    margin:0;
+}

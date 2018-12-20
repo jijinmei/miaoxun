@@ -1,0 +1,5 @@
+components 
+
+    ym_type 搜索框 里面带有筛选的样式
+
+    search 通过监听vuex的变量(ym_type里面进行修改)来调用接口 并获得数据

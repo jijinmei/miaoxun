@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>聊天</title>
+  <script>
+    if (window.localStorage.getItem('user')) {
+      token = JSON.parse(window.localStorage.getItem('user')).sessiontoken || ''
+      sessiontoken = JSON.parse(window.localStorage.getItem('user')).sessiontoken || ''
+    }
+    // alert("::::::::::"+token)
+    Boss4 = "http://stg-m1-ymboss.leanapp.cn/"
+  </script>
+  <link rel="stylesheet" href="./css/miao_chat.css">
+</head>
+
+<body>
+  <div>
+    <div class="chat">
+      <div>
+        <div class="chat_btn">
+          <!-- <span>聊天</span> -->
+        </div>
+        <div>
+          <div>
+            <div>
+              <img src="" alt="" id="chat_img">
+            </div>
+            <p id="chat_p"></p>
+          </div>
+          <div><span>展开</span></div>
+        </div>
+        <div>
+          <!--左边聊天列表容器-->
+          <div id="chat_man">
+          </div>
+        </div>
+        <!-- <div class="chat_bottom">
+                    <span>聊天</span>
+                    <span>消息</span>
+                    <span class="back">返回</span>
+                </div> -->
+      </div>
+      <div class="room">
+        <div class="top">
+
+        </div>
+        <div class="center">
+        </div>
+        <div class="bottom">
+          <div>
+            <img src="../../img/common/Img.png">
+          </div>
+          <textarea name="" cols="30" rows="4"></textarea>
+          <span>发送</span>
+          <input type="file" class="fls">
+        </div>
+        <div class="show_img">
+          <div>
+            <img src="">
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../jquery-1.11.3.js"></script>
+  <script src="./js/av-min.js"></script>
+  <script src="./js/realtime.browser.min.js"></script>
+  <script src="./js/typed-messages.min.js"></script>
+  <script src="./js/ym_chat.js"></script>
+  <!--<script>
+          setTimeout(function(){
+                console.log("realtime:::::")
+                console.log(realtime)
+          },5000)
+  </script>-->
+</body>
+
+</html>
